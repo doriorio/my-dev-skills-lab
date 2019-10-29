@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center; 
+}
+
+
+#container {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+h2 {
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+    background-color: #63AD63;
+    color: white;
+    padding: 5px;
+
+}
+
+input {
+    border-color: #63AD63;
+    border-style: solid;
+    height: 36px;
+  }
+
+  #input-submit {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-evenly;
+      width:  inherit;
+
+  }
+
+  tr {
+      height: 100px;
+  }
