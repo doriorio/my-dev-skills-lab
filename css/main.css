@@ -12,11 +12,12 @@ body {
 }
 
 h2 {
-    letter-spacing: .25rem;
+    letter-spacing: .1rem;
     text-transform: uppercase;
     background-color: #63AD63;
     color: white;
     padding: 5px;
+    padding: 0px 40px;
 
 }
 

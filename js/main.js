@@ -13,19 +13,18 @@ var userList = $('ul');
 
 $('#skillsInput button').click(function(e){
     e.preventDefault();
-    var userInput = $('input').val()
-    var div = `<div><button class="bg-danger text-white" id="${userInput}">X</button><span class="text-warning"> ${userInput}</span></div>`;
-    userList.append(div);
-    
+    var userInput = $('input').val();
+    console.log(userInput.length);
+    var div = `<div><button class="bg-danger text-white" id="removeButton">X</button><span class="text-warning"> ${userInput}</span></div>`;
+    if (userInput.length !== 0){
+        userList.append(div);
+    }
+    if (userInput.length === 0) {
+        alert("What, no skills?");
+    }
 });
 
-$('button .bg-danger text-white').click(function(e){
-    console.log("hi");
+$(document).on("click","#removeButton",function(){
+    $(this).closest("div").remove();
+});
 
-})
-
-
-//on button click
-//skill = val
-//make the new skill
-//reset the value to '' 
