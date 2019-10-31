@@ -1,15 +1,8 @@
-// $('#addSkill').on('click',function(evt){
-//     table.append();
-// });
 
 
 
 var userList = $('ul');
-// var input = $('input').val()
 
-// $("button").click(function() { 
-//     $("skills-input").submit(); 
-// }); 
 
 $('#skillsInput button').click(function(e){
     e.preventDefault();
